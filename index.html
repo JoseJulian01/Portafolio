@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">Bienvenido</div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#SobreMi">Sobre Mí</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Julian Flores</h1>
+                <p class="subtitle">Desarrollador de software</p>
+                <ul class="social-links-f">
+                    <li><a href="https://www.linkedin.com/in/julian-flores-r/" aria-label="LinkedIn"><img
+                                src="/assets/linkedin.ico" alt=""></a></li>
+                    <li><a href="https://github.com/JoseJulian01" aria-label="GitHub"><img src="/assets/github.ico"
+                                alt=""></a></li>
+                    <li><a href="xxjosexx125@gmail.com"><img src="/assets/email.ico" alt="email"></a></li>
+                </ul>
+                <br>
+                <a href="#portfolio" class="cta-button">Ver Trabajos</a>
+            </div>
+            <div class="decorative-border"></div>
+
+            <div id="SobreMi">
+                <h2>Sobre Mí</h2>
+                <div class="divider"></div>
+                <br>
+                <p>Planeador de un futuro más prospero en el mundo de la tecnología, donde crear herramientas necesarias
+                    para aquellos que la necesitan sea una realidad. Encaminado por las buenas practicas tanto éticas
+                    como técnicas, buscando siempre la excelencia en cada proyecto.</p>
+                <br>
+                <p>En mis tiempos libres me gusta leer libro ensayos y escribir sobre ello. Conocer acerca de las
+                    ciencias sociales, para así conocer de las ideas que nos rodean y ser cada vez más virtuoso.</p>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header">
+                <h2>Mis Trabajos</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="grid-container">
+                <!-- Box 1: Text Only -->
+                <article class="content-box">
+                    <div class="box-inner">
+                        <h3>Proyecto Alpha</h3>
+                        <p>Descripción detallada del proyecto. Un enfoque minimalista para problemas complejos, buscando
+                            siempre la elegancia en la solución.</p>
+                        <span class="box-decoration"></span>
+                    </div>
+                </article>
+
+                <!-- Box 2: Image Place holder -->
+                <article class="content-box image-box">
+                    <div class="box-inner">
+                        <div class="img-placeholder">Imagen del Proyecto</div>
+                        <h3>Diseño Visual</h3>
+                    </div>
+                </article>
+
+                <!-- Box 3: Text Only -->
+                <article class="content-box">
+                    <div class="box-inner">
+                        <h3>Estrategia Digital</h3>
+                        <p>Planificación y ejecución de campañas digitales con un retorno de inversión optimizado y
+                            alcance global.</p>
+                        <span class="box-decoration"></span>
+                    </div>
+                </article>
+
+                <!-- Box 4: List -->
+                <article class="content-box" id="habilidades">
+                    <div class="box-inner">
+                        <h3>Habilidades</h3>
+                        <ul class="skill-list">
+                            <li>Trabajo en equipo</li>
+                            <li>Comunicación Acertiva</li>
+                            <li>Adaptabilidad</li>
+                        </ul>
+                    </div>
+                </article>
+
+
+                <article class="content-box" id="tecnologias">
+                    <div class="box-inner">
+                        <h3>Tecnologías</h3>
+                        <ul class="skill-list">
+                            <li><img src="/assets/C.ico" alt="C++"><span>C++</span></li>
+                            <li><img src="/assets/java.ico" alt="JAVA"><span>JAVA</span></li>
+                            <li><img src="/assets/mysql.ico" alt="MySQL"><span>MySQL</span></li>
+                            <li><img src="/assets/HTML.ico" alt="HTML5"><span>HTML5</span></li>
+                            <li><img src="/assets/CSS.ico" alt="CSS3"><span>CSS3</span></li>
+                            <li><img src="/assets/js.ico" alt="JavaScript"><span>JavaScript</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="content-box" id="contacto">
+                    <div class="box-inner">
+                        <h3>Contacto</h3>
+                        <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarme.</p>
+
+                        <ul>
+                            <li><img src="/assets/email.ico" alt="email"><span
+                                    id="email">xxjosexx125@gmail.com</span><img id="copy" src="/assets/copy.ico"
+                                    alt="copy" onclick="copyEmailToClipboard()"> <button
+                                    onclick="copyEmailToClipboard()"></button> </li>
+
+                            <script>
+                                function copyEmailToClipboard() {
+                                    const email = document.getElementById('email').textContent;
+                                    navigator.clipboard.writeText(email);
+                                    alert('Email copied to clipboard: ' + email);
+                                }
+                            </script>
+
+                            <li><a href="https://www.linkedin.com/in/julian-flores-r/">
+                                    <img src="/assets/linkedin.ico" alt="linkedin"><span>linkedin</span></a></li>
+
+                            <li><a href="https://github.com/JoseJulian01">
+                                    <img src="/assets/github.ico" alt="github"><span>github</span></a></li>
+
+                            <li><a href="assets/CV2025.pdf" target="_blank"><img src="/assets/cv.ico"
+                                        alt="cv"><span></span>
+                                    Ver CV</span></a></li>
+                        </ul>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Portafolio.</p>
+    </footer>
+</body>
+
+</html>
