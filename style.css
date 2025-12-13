@@ -201,13 +201,14 @@ body {
 
 .content-box {
     background: var(--white);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-soft);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.03);
     min-height: 300px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -302,9 +303,67 @@ body {
     }
 }
 
+.sobreMiTexto {
+    text-align: left;
+
+    font-size: 1rem;
+}
+
+#alzh {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: left;
+    justify-content: left;
+
+
+
+
+    li {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    span {
+        border-left: 2px solid var(--gold-accent);
+        padding-left: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--deep-grey);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        transition: color 0.3s ease;
+        align-items: center;
+        display: flex;
+    }
+
+}
+
+#alzh a:hover {
+    color: var(--gold-accent);
+}
+
+#tec-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
 #SobreMi {
     text-align: left;
-    margin-top: 4rem;
+
     border-top: 1px solid rgba(212, 175, 55, 0.2);
     font-size: 0.9rem;
     color: var(--stone-grey);
@@ -318,23 +377,57 @@ body {
     color: var(--deep-grey);
 }
 
-#habilidades {
-    margin-top: 4rem;
-    max-height: 300px;
-    /* overflow-y: scroll; */
-    max-width: 350px;
+/* #habilidades {
+
+
+} */
+
+/* esta clase es la lista de tecnologias */
+.use-tecnologies {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-left: .2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        align-items: center;
+        display: flex;
+    }
+
+    span {
+        margin-left: 5px;
+        border-left: 2px solid var(--gold-accent);
+        padding-left: 5px;
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 
 #tecnologias {
     text-align: left;
-    margin-top: 4rem;
     border-top: 1px solid rgba(212, 175, 55, 0.2);
     font-size: 0.9rem;
     color: var(--stone-grey);
 }
 
-#tecnologias li {
+li {
     align-items: center;
     display: flex;
 }
@@ -353,9 +446,8 @@ body {
 
 #contacto {
     min-height: 300px;
-    min-width: 350px;
+    min-width: 300px;
     text-align: left;
-    margin-top: 4rem;
     border-top: 1px solid rgba(212, 175, 55, 0.2);
     font-size: 0.9rem;
     color: var(--stone-grey);
@@ -405,14 +497,66 @@ body {
 }
 
 img#copy {
+    background-color: var(--cream-bg);
     cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin-left: 1rem;
+    width: 15px;
+    height: 15px;
+    margin-left: 0.5rem;
     border-radius: 50%;
 }
 
 img#copy:hover {
-    background-color: var(--cream-bg);
+    background-color: var(--gold-accent);
     transition: 500ms;
+}
+
+/* Academic Timeline Styles */
+.academic-timeline {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid rgba(212, 175, 55, 0.3);
+    margin-left: 1rem;
+}
+
+.timeline-item {
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    /* Override global li style */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.9rem;
+    /* Adjust to sit on the line */
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--gold-accent);
+    border-radius: 50%;
+    border: 3px solid var(--cream-bg);
+    /* Creates space around dot */
+    box-shadow: 0 0 0 1px var(--gold-accent);
+}
+
+.timeline-year {
+    font-family: var(--font-heading);
+    color: var(--gold-accent);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-content {
+    font-size: 1rem;
+    color: var(--deep-grey);
+    line-height: 1.4;
 }
