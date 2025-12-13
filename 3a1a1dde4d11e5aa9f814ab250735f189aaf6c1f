@@ -1,0 +1,23 @@
+[33mcommit 79a201e1e504473fbfc23236ae8e66b9838ad573[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mscripts[m[33m)[m
+Author: JoseJulian01 <xxjosexx125@gmail.com>
+Date:   Sat Dec 13 14:01:06 2025 -0600
+
+    Organizacion de las tarjetas
+
+[33mcommit dd2247552003e41aaf11d79fa98f1c285c21398a[m
+Author: JoseJulian01 <xxjosexx125@gmail.com>
+Date:   Fri Dec 12 19:17:38 2025 -0600
+
+    Implementacion de las tec utilizadas y formacion academica
+
+[33mcommit 46413d1a5e597c883156d0ac79789e5dbd115518[m
+Author: JoseJulian01 <xxjosexx125@gmail.com>
+Date:   Thu Dec 11 21:48:00 2025 -0600
+
+    Agrego una rama llamada script
+
+[33mcommit 3a1a1dde4d11e5aa9f814ab250735f189aaf6c1f[m[33m ([m[1;33mtag: [m[1;33mversion_1[m[33m, [m[1;32mmain[m[33m)[m
+Author: JoseJulian01 <xxjosexx125@gmail.com>
+Date:   Wed Dec 10 19:11:52 2025 -0600
+
+    Primera version
