@@ -19,8 +19,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--cream-bg);
+    background: linear-gradient(135deg, #FFFFFF 0%, #E0E0D0 100%);
+    background-attachment: fixed;
     color: var(--deep-grey);
     font-family: var(--font-body);
     line-height: 1.6;
@@ -148,7 +153,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .social-links-f {
@@ -328,6 +333,7 @@ body {
     img {
         width: 50px;
         height: 50px;
+        margin: 5px;
     }
 
     span {
@@ -446,7 +452,6 @@ li {
 
 #contacto {
     min-height: 300px;
-    min-width: 300px;
     text-align: left;
     border-top: 1px solid rgba(212, 175, 55, 0.2);
     font-size: 0.9rem;
